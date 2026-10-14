@@ -4,7 +4,7 @@ name: Remote Control — Claude y Codex
 tagline: Claude Code y Codex en un panel con cuentas independientes
 icon: https://raw.githubusercontent.com/LogiQDAdmin/umbrel-app-store/main/logiqd-claude-rc/icon.svg
 category: developer
-version: "0.2.0"
+version: "0.2.1"
 port: 3781
 description: >-
   Una app para gestionar Claude Code y Codex en las carpetas de tu Umbrel.
@@ -29,8 +29,9 @@ repo: https://github.com/LogiQDAdmin/claude-rc
 support: https://github.com/LogiQDAdmin/claude-rc/issues
 gallery: []
 releaseNotes: >-
-  Añade Codex como proveedor experimental junto a Claude. Mantiene el ID, puerto y datos
-  anteriores. Login separado, CLIs fijados, updater apagado, fallos visibles y migración aditiva.
+  Corrige el login de Claude y verifica los intentos de emparejamiento experimental de Codex.
+  Distingue relay conectado de cliente emparejado. Mantiene versiones de los CLIs y datos.
+  La compatibilidad de hosts Linux sin escritorio sigue sin verificar.
 dependencies: []
 path: ""
 submitter: LogiQD
