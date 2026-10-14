@@ -1,37 +1,43 @@
 manifestVersion: 1
 id: logiqd-claude-rc
-name: Remote Control
-tagline: Claude Code en tu Umbrel, siempre disponible desde el móvil
+name: Remote Control — Claude y Codex
+tagline: Claude Code y Codex en un panel con cuentas independientes
 icon: https://raw.githubusercontent.com/LogiQDAdmin/umbrel-app-store/main/logiqd-claude-rc/icon.svg
 category: developer
-version: "0.1.1"
+version: "0.2.0"
 port: 3781
 description: >-
-  Mantiene Claude Code funcionando en tu Umbrel con Remote Control: cada proyecto aparece en la
-  app de Claude del móvil y en claude.ai/code, y desde ahí abres conversaciones que trabajan en
-  las carpetas de este servidor.
+  Una app para gestionar Claude Code y Codex en las carpetas de tu Umbrel.
+  Al crear un proyecto eliges Claude, Codex o ambos, con cuentas y supervisión independientes.
 
 
-  El panel conecta tu cuenta de Claude (Pro, Max, Team o Enterprise), arranca un servidor por
-  proyecto, los vuelve a levantar si se caen y, si el Umbrel se apaga de golpe, rescata las
-  conversaciones que estaban abiertas para que sigan respondiendo.
+  Claude conserva Remote Control por proyecto, terminal, conversaciones y recuperación tras
+  un apagado inesperado. Codex añade login oficial por dispositivo, terminal por proyecto y
+  app-server con acceso remoto experimental. El panel avisa si un proveedor se cae o cambia
+  de formato y sigue disponible aunque no haya una cuenta conectada.
 
 
-  Elige en los ajustes de la app la carpeta donde están tus proyectos. Claude podrá leer, editar
-  y ejecutar en los proyectos que marques como de confianza.
+  Ambos CLIs tienen versiones fijadas y actualizaciones automáticas desactivadas.
+  Esta actualización conserva los datos y proyectos de Claude RC 0.1.1.
+
+
+  Si eliges los dos agentes para una misma carpeta, trabaja por turnos: pueden competir por
+  los mismos archivos y el índice Git. Para trabajar en paralelo usa carpetas o worktrees distintos.
 developer: LogiQD
 website: https://github.com/LogiQDAdmin/claude-rc
 repo: https://github.com/LogiQDAdmin/claude-rc
 support: https://github.com/LogiQDAdmin/claude-rc/issues
 gallery: []
-releaseNotes: La imagen se publica en la cuenta LogiQDAdmin (ghcr.io/logiqdadmin/claude-rc).
+releaseNotes: >-
+  Añade Codex como proveedor experimental junto a Claude. Mantiene el ID, puerto y datos
+  anteriores. Login separado, CLIs fijados, updater apagado, fallos visibles y migración aditiva.
 dependencies: []
 path: ""
 submitter: LogiQD
 folderAccess:
   - id: proyectos
     name: Carpeta de proyectos
-    note: Las carpetas que estén aquí podrán añadirse como proyectos. Claude sólo trabaja en las que marques de confianza.
+    note: Cada proyecto elige sus agentes y permisos de confianza. Usa carpetas separadas para edición simultánea.
     mounts:
       - service: web
         targetPath: /projects
