@@ -1,0 +1,37 @@
+manifestVersion: 1
+id: logiqd-claude-rc
+name: Remote Control
+tagline: Claude Code en tu Umbrel, siempre disponible desde el móvil
+icon: https://raw.githubusercontent.com/LogiQD/umbrel-app-store/main/logiqd-claude-rc/icon.svg
+category: developer
+version: "0.1.0"
+port: 3781
+description: >-
+  Mantiene Claude Code funcionando en tu Umbrel con Remote Control: cada proyecto aparece en la
+  app de Claude del móvil y en claude.ai/code, y desde ahí abres conversaciones que trabajan en
+  las carpetas de este servidor.
+
+
+  El panel conecta tu cuenta de Claude (Pro, Max, Team o Enterprise), arranca un servidor por
+  proyecto, los vuelve a levantar si se caen y, si el Umbrel se apaga de golpe, rescata las
+  conversaciones que estaban abiertas para que sigan respondiendo.
+
+
+  Elige en los ajustes de la app la carpeta donde están tus proyectos. Claude podrá leer, editar
+  y ejecutar en los proyectos que marques como de confianza.
+developer: LogiQD
+website: https://github.com/LogiQD/claude-rc
+repo: https://github.com/LogiQD/claude-rc
+support: https://github.com/LogiQD/claude-rc/issues
+gallery: []
+releaseNotes: Primera versión.
+dependencies: []
+path: ""
+submitter: LogiQD
+folderAccess:
+  - id: proyectos
+    name: Carpeta de proyectos
+    note: Las carpetas que estén aquí podrán añadirse como proyectos. Claude sólo trabaja en las que marques de confianza.
+    mounts:
+      - service: web
+        targetPath: /projects
