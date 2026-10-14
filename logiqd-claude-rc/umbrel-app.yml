@@ -2,9 +2,9 @@ manifestVersion: 1
 id: logiqd-claude-rc
 name: Remote Control
 tagline: Claude Code en tu Umbrel, siempre disponible desde el móvil
-icon: https://raw.githubusercontent.com/LogiQD/umbrel-app-store/main/logiqd-claude-rc/icon.svg
+icon: https://raw.githubusercontent.com/LogiQDAdmin/umbrel-app-store/main/logiqd-claude-rc/icon.svg
 category: developer
-version: "0.1.0"
+version: "0.1.1"
 port: 3781
 description: >-
   Mantiene Claude Code funcionando en tu Umbrel con Remote Control: cada proyecto aparece en la
@@ -20,11 +20,11 @@ description: >-
   Elige en los ajustes de la app la carpeta donde están tus proyectos. Claude podrá leer, editar
   y ejecutar en los proyectos que marques como de confianza.
 developer: LogiQD
-website: https://github.com/LogiQD/claude-rc
-repo: https://github.com/LogiQD/claude-rc
-support: https://github.com/LogiQD/claude-rc/issues
+website: https://github.com/LogiQDAdmin/claude-rc
+repo: https://github.com/LogiQDAdmin/claude-rc
+support: https://github.com/LogiQDAdmin/claude-rc/issues
 gallery: []
-releaseNotes: Primera versión.
+releaseNotes: La imagen se publica en la cuenta LogiQDAdmin (ghcr.io/logiqdadmin/claude-rc).
 dependencies: []
 path: ""
 submitter: LogiQD

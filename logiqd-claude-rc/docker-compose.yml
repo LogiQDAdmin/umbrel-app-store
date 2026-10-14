@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
 
   web:
-    image: ghcr.io/logiqd/claude-rc:0.1.0
+    image: ghcr.io/logiqdadmin/claude-rc:0.1.1
     restart: on-failure
     # Tiempo para cerrar cada servidor con Ctrl+C: si se corta antes, cuenta como apagón
     stop_grace_period: 45s
