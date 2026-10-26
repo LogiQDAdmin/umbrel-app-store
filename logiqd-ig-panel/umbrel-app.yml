@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: logiqd-ig-panel
+name: IG Automation
+tagline: Palabras clave, DMs y leads de la automatización de Instagram
+icon: https://raw.githubusercontent.com/LogiQDAdmin/umbrel-app-store/main/logiqd-ig-panel/icon.svg
+category: social
+version: "0.1.0"
+port: 3782
+description: >-
+  Panel de la automatización de Instagram de LogiQD: cuando alguien comenta una palabra clave en un reel,
+  n8n le responde en público, le manda un DM y un asistente con IA le hace unas preguntas hasta
+  cualificarlo como lead.
+
+
+  Desde aquí eliges qué palabra se busca en cada vídeo (o en todos), escribes el DM y las respuestas
+  públicas, ves los leads con su conversación, decides cuándo sigue una persona en lugar del bot y
+  envías los buenos a LogiQD HQ.
+
+
+  Necesita la base de datos de la automatización (logiqd-ig-db) en este mismo Umbrel y el archivo
+  /data/logiqd-services/ig-automation/panel.env con la conexión.
+developer: LogiQD
+website: https://github.com/LogiQDAdmin/ig-panel
+repo: https://github.com/LogiQDAdmin/ig-panel
+support: https://github.com/LogiQDAdmin/ig-panel/issues
+gallery: []
+releaseNotes: >-
+  Primera versión: vídeos y palabras clave, leads con su conversación, envío a HQ y ajustes de la IA.
+dependencies: []
+path: ""
+submitter: LogiQD

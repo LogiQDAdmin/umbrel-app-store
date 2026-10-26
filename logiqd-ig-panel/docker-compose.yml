@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: logiqd-ig-panel_web_1
+      APP_PORT: 8080
+
+  web:
+    image: ghcr.io/logiqdadmin/ig-panel:0.1.0
+    restart: on-failure
+    stop_grace_period: 15s
+    mem_limit: 256m
+    # Conexión a logiqd-ig-db (PGHOST, PGUSER, PGPASSWORD...). Vive en el Umbrel de LogiQD, fuera de git.
+    env_file:
+      - /data/logiqd-services/ig-automation/panel.env
+    environment:
+      HQ_URL: https://admin.logiqd.me
