@@ -4,7 +4,7 @@ name: IG Automation
 tagline: Palabras clave, DMs y leads de la automatización de Instagram
 icon: https://raw.githubusercontent.com/LogiQDAdmin/umbrel-app-store/main/logiqd-ig-panel/icon.svg
 category: social
-version: "0.1.0"
+version: "0.1.1"
 port: 3782
 description: >-
   Panel de la automatización de Instagram de LogiQD: cuando alguien comenta una palabra clave en un reel,
@@ -25,7 +25,8 @@ repo: https://github.com/LogiQDAdmin/ig-panel
 support: https://github.com/LogiQDAdmin/ig-panel/issues
 gallery: []
 releaseNotes: >-
-  Primera versión: vídeos y palabras clave, leads con su conversación, envío a HQ y ajustes de la IA.
+  Corrige «Enviar a HQ» con formularios cuyo campo de nombre tiene la clave «name»: ahora el lead llega
+  con nombre, teléfono, empresa y resumen en cualquier formulario de HQ.
 dependencies: []
 path: ""
 submitter: LogiQD
